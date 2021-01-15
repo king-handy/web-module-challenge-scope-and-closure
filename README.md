@@ -43,9 +43,12 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+  Closure is the functional scope of where a function references from/to. This can be globally (throughout code) or within a specific function.
+
 2. Study the following code, then answer the questions below.
 
-```js
+
 function personalDice(name){
   return function(){
       // generate random number between 1 and 6
@@ -64,9 +67,17 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+  Global closure is used to declare the constants dansRoll & zoesRoll, because they are declared outside of the function personalDice().
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+  Calling 'dansRoll' a second time with yield a different response. The function runs through a second time.
+
 c. What is the lexical scope of `newRoll`? 
 
+  'newRoll' is in the scope of the personalDice() function.
+  
 
 ### Task 3 - Stretch Goals
 
