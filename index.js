@@ -89,9 +89,8 @@ Use the finalScore function below to do the following:
 */ 
 
 function finalScore(cb, numberInnings){
-  cb(inning);
-  return 
-  // return `Home: ` +
+  
+  return `Home: ${}, Away: ${}`;
 }
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
