@@ -43,6 +43,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+    Closure determines the scope of access a particular variable or function has to the rest of the code. Some elements are accessible to other areas of code, while some are specific to a particular area of code.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,9 +67,17 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+    The return function has local closure because it is within the scope of personalDice function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+    The first time dansRoll is called - a randomly generated number (*6) is returned. The second roll will return a similar result with a different number.
+
 c. What is the lexical scope of `newRoll`? 
 
+    The newRoll constant is a child of return function() and grandchild of personalDice function.
+    
 
 ### Task 3 - Stretch Goals
 
